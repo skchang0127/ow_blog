@@ -37,7 +37,9 @@ app.use(session({
     db:settings.db,
     host:settings.host,
     port:settings.port
-  })
+  }),
+    saveUninitialized:true,
+    resave:true
 }));
 
 //app.use('/', routes);
